@@ -1,5 +1,6 @@
 body{
     background-color: darkblue;
+    text-align: center;
 }
 
 h1{
@@ -10,4 +11,5 @@ h1{
 
 p{
     color: lightcoral;
+    text-align: center;
 }
