@@ -1,15 +1,71 @@
+
 body{
-    background-color: darkblue;
-    text-align: center;
+    width: 100%;
+    margin: 0;
+    background-color: #ffebcd;
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
+ }
+ header{
+    background-color: #ffebcd;
+    z-index: 5;
 }
 
-h1{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-    color: white ;
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+ }
+li{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
-
-p{
-    color: lightcoral;
-    text-align: center;
+header a{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 50px;
+}
+main{
+    background-color: #ffebcd;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(10, 100px);
+}
+.welcome{
+    grid-area: 1 / 2 / 4 / 9;
+}
+.project{
+    grid-area: 1 / 13 / 9 / 20;
+}
+.stack{
+    grid-area: 7 / 2 / 11 / 20;
+    background-color: #ffebcd ;
+}
+.logo{
+    max-height: 20px;
+}
+h2{
+    letter-spacing: 0.01em;
+    line-height: 2em;
+    font-size: 1.5em;
+}
+h3{
+    letter-spacing: 0.01em;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+.a_project{
+    font-family: 'Special Elite', cursive;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    line-height: 2em;
+    font-size: 1em;
+    text-decoration: underline;
 }
