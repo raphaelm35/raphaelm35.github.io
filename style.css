@@ -7,41 +7,37 @@ body{
  }
 main{
     display: flex;
+    align-content: space-between;
     width: 100%;
+    height: 100%;
     flex-wrap: wrap;
+    border: 5px solid red;
+    margin: 0;
+    padding: 0;
 
 }
 .welcome{
-    width: 40%;
+    width: 45%;
+    padding-left: 5%;
+    float: left;
 }
 .project{
-    width: 40%;
+    width: 45%;
+    padding-right: 5%;
     font-size: 1.5rem;
     justify-self: end;
     justify-content: end;
     justify-items: end;
     text-align: end;
-}
-.lines{
-    width: 40%;
-    font-size: 1.5rem;
-    justify-self: end;
-    justify-content: end;
-    justify-items: end;
-    text-align: end;
-}
-#number{
-    text-decoration: underline;
+    float: left;
 }
 .contact{
-    width: 40%;
-    padding: 3rem;
+    width: 20%;
+    padding-left: 5%;
     font-size: 1.5rem;
 }
 .stack{
-    width: 100%;
-    border: 5px solid black;
-    padding: 5em;
+    width: 50%;
     font-size: 1.5rem;
     display: flex;
     text-align: center;
@@ -51,18 +47,23 @@ main{
     align-items: center;
     justify-content: center;
 }
-.stack2{
-    width: 20%;
-    padding: 5em;
-    font-size: 1.5rem;
-    text-align: center;
-    flex-wrap: wrap;
-    display: inline-flex;
-}
+
 .logo{
     max-height: 2em;
     margin: 20px;
     flex-wrap: wrap;
+}
+.lines{
+    width: 20%;
+    padding-right: 5%;
+    font-size: 1.5rem;
+    justify-self: end;
+    justify-content: end;
+    justify-items: end;
+    text-align: end;
+}
+#number{
+    text-decoration: underline;
 }
 footer{
     width: 20%;
@@ -91,3 +92,8 @@ h4{
     font-size: 1em;
     text-decoration: underline;
 }
+@media screen and (max-width: 800px) {
+    .welcome, .project, .contact, .stack, .lines{
+      width: 100%;
+    }
+  }
